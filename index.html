@@ -15,20 +15,20 @@
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Your CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Scripts -->
+    <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body id="top">
 
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="#">Alex Chi</a>
+    <a class="navbar-brand" href="#top">Alex Chi</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
         <span class="navbar-toggler-icon"></span>
@@ -46,10 +46,17 @@
 
 <!-- HERO -->
 <div class="container-fluid bg-2 text-center hero" data-aos="fade-up">
-    <h1 class="display-4 fw-bold">Hi, I'm Alex</h1>
+
+    <img src="img/logo.png" id="logo" alt="Logo">
+
+    <h1 class="display-4 fw-bold mt-4">Hi, I'm Alex</h1>
 
     <p class="lead">
         High school student interested in software engineering and computer science.
+    </p>
+
+    <p class="text-white-50">
+        Aspiring software engineer focused on building interactive web applications and learning full-stack development.
     </p>
 
     <p class="text-white-50">
@@ -66,32 +73,44 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-sm-4" data-aos="zoom-in">
+            <div class="col-sm-4" data-aos="zoom-in-up">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">SEP10 Freedom Project</h5>
-                        <p class="card-text">Generates study guides from notes.</p>
-                        <p class="text-muted"></p>
+                        <h5 class="card-title">AI Study Helper</h5>
+                        <p class="card-text">
+                            Generates study guides from notes using web APIs.
+                        </p>
+                        <p class="text-muted">
+                            React • Firebase • API integration
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-sm-4" data-aos="zoom-in">
+            <div class="col-sm-4" data-aos="zoom-in-up">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">SEP11 Freedonm Project</h5>
-                        <p class="card-text">Inspired by the game Dino Chrome</p>
-                        <p class="text-muted">JavaScript • Kaboom.js</p>
+                        <h5 class="card-title">SEP11 Freedom Project</h5>
+                        <p class="card-text">
+                            Browser-based game inspired by Google Chrome Dino. Built to practice JavaScript game loops and collision detection.
+                        </p>
+                        <p class="text-muted">
+                            JavaScript • Game Development
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-sm-4" data-aos="zoom-in">
+            <div class="col-sm-4" data-aos="zoom-in-up">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">APCSP Freedom Project</h5>
-                        <p class="card-text">.</p>
-                        <p class="text-muted"></p>
+                        <h5 class="card-title">Task Manager</h5>
+                        <p class="card-text">
+                            To-do application with local storage for task tracking and organization.
+                        </p>
+                        <p class="text-muted">
+                            React • Local Storage
+                        </p>
                     </div>
                 </div>
             </div>
@@ -111,7 +130,7 @@
     <span class="badge badge-dark">Git</span>
 
     <p class="mt-3 text-muted">
-        Currently learning Javascript
+        Currently learning JavaScript fundamentals and DOM manipulation
     </p>
 </div>
 
@@ -128,19 +147,18 @@
 <div class="container-fluid bg-4 text-center" id="contact" data-aos="fade-up">
     <h3 class="margin">Contact</h3>
 
-    <p>Personal Email: alexc234465102@email.com</p>
-
-    <p>School Email: ALexc307@nycstudents.net</p>
+    <p>📧 alexc234465102@email.com</p>
+    <p>🏫 ALexc307@nycstudents.net</p>
 
     <a href="#" class="btn btn-light">GitHub</a>
 </div>
 
 <!-- FOOTER -->
 <footer class="container-fluid text-center">
-    <p>Built by Alex • High School Student</p>
+    <p>Built by Alex • High School Developer</p>
 </footer>
 
-<!-- AOS SCRIPT -->
+<!-- AOS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init({
