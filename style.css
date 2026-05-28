@@ -6,8 +6,8 @@ html, body {
 body {
     font-family: "Montserrat", sans-serif;
     line-height: 1.6;
-    background-color: #f8fafc;
-    color: #0f172a;
+    background-color: #0b0b0f; /* deep black */
+    color: #e6e6e6;
 }
 
 /* HERO */
@@ -15,12 +15,12 @@ body {
     padding: 90px 20px;
 }
 
-/* LOGO */
+/* LOGO (fits dark luxury theme) */
 #logo {
-    max-height: 180px;
+    max-height: 190px;
     margin-bottom: 20px;
     transition: transform 0.3s ease;
-    filter: drop-shadow(0px 6px 12px rgba(0,0,0,0.25));
+    filter: drop-shadow(0px 10px 18px rgba(0,0,0,0.6));
 }
 
 #logo:hover {
@@ -30,7 +30,7 @@ body {
 /* TEXT */
 p {
     font-size: 16px;
-    color: #475569;
+    color: #c9c9c9;
 }
 
 /* SECTIONS */
@@ -39,56 +39,96 @@ p {
     padding-bottom: 70px;
 }
 
-/* COLORS */
+/* 🔥 THEME COLORS (from your logo palette) */
 .bg-1 {
-    background-color: #ffffff;
-    color: #0f172a;
+    background-color: #121218; /* dark charcoal */
+    color: #e6e6e6;
 }
 
 .bg-2 {
-    background-color: #2563eb;
-    color: white;
+    background: linear-gradient(135deg, #0b0b0f, #1a1a22);
+    color: #e6e6e6;
 }
 
 .bg-3 {
-    background-color: #f1f5f9;
-    color: #0f172a;
+    background-color: #101015;
+    color: #e6e6e6;
 }
 
 .bg-4 {
-    background-color: #0f172a;
-    color: white;
+    background-color: #07070a;
+    color: #e6e6e6;
 }
 
 /* NAVBAR */
 .navbar {
     letter-spacing: 1px;
+    background-color: #07070a !important;
+    border-bottom: 1px solid rgba(212, 160, 90, 0.2);
+}
+
+.navbar-brand {
+    color: #d4a05a !important; /* bronze/gold */
+}
+
+.navbar-nav li a {
+    color: #c9c9c9 !important;
 }
 
 .navbar-nav li a:hover {
-    color: #60a5fa !important;
+    color: #6fa8ff !important; /* soft blue accent */
 }
 
 /* CARDS */
 .card {
-    border: none;
-    border-radius: 12px;
+    background-color: #15151c;
+    border: 1px solid rgba(212, 160, 90, 0.15);
+    border-radius: 14px;
     margin-top: 20px;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, border 0.2s ease;
+    color: #e6e6e6;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    border: 1px solid rgba(212, 160, 90, 0.5);
+}
+
+/* CARD TEXT */
+.card-text {
+    color: #bdbdbd;
+}
+
+.text-muted {
+    color: #8f8f8f !important;
 }
 
 /* MARGIN */
 .margin {
     margin-bottom: 40px;
+    color: #d4a05a; /* gold accent headings */
 }
 
-/* BADGES */
+/* BADGES (matching palette) */
 .badge {
     margin: 3px;
     font-size: 14px;
     padding: 8px 10px;
+    border-radius: 8px;
+}
+
+.badge-primary {
+    background-color: #6fa8ff;
+}
+
+.badge-secondary {
+    background-color: #3a3a44;
+}
+
+.badge-success {
+    background-color: #d4a05a; /* gold instead of green */
+}
+
+.badge-dark {
+    background-color: #1a1a22;
 }
