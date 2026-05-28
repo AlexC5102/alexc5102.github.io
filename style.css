@@ -3,7 +3,7 @@ html, body {
     scroll-behavior: smooth;
 }
 
-/* 🌌 MOVING GRADIENT BACKGROUND */
+
 body {
     font-family: "Reenie Beanie", cursive;
     line-height: 1.6;
@@ -19,7 +19,6 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-/* ✨ GLOW ORBS BACKGROUND EFFECT */
 body::before,
 body::after {
     content: "";
@@ -64,7 +63,7 @@ body::after {
 
 /* TEXT */
 p {
-    font-size: 16px;
+    font-size: 36px;
     color: rgba(255,255,255,0.75);
 }
 
@@ -74,7 +73,7 @@ p {
     padding-bottom: 80px;
 }
 
-/* 🧠 GLASSMORPHISM CARDS (Apple style) */
+
 .card {
     background: rgba(20, 20, 30, 0.55);
     border: 1px solid rgba(255, 255, 255, 0.08);
@@ -135,7 +134,7 @@ h1, h3 {
     opacity: 0.9;
 }
 
-/* 📱 MOBILE RESPONSIVE UPGRADE */
+
 @media (max-width: 768px) {
     #logo {
         max-height: 140px;
@@ -146,7 +145,7 @@ h1, h3 {
     }
 
     h1 {
-        font-size: 32px;
+        font-size: 42px;
     }
 
     .card {
