@@ -1,83 +1,93 @@
 html, body {
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
-    font: 20px Montserrat, sans-serif;
-    line-height: 1.8;
-    color: #f5f6f7;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+    background-color: #f8fafc;
+    color: #0f172a;
 }
 
+/* HERO */
+.hero {
+    padding: 90px 20px;
+}
+
+/* LOGO */
+#logo {
+    max-height: 180px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+#logo:hover {
+    transform: scale(1.05);
+}
+
+/* TEXT */
 p {
     font-size: 16px;
+    color: #475569;
 }
 
-a {
-    color: #2e72a1;
+/* SECTIONS */
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
-#logo, .project-img {
-    max-height: 300px;
-}
-
-#fork img{
-    height: 25px;
-    margin-bottom: 25px;
-    filter: invert(1);
-}
-
-#sep {
-    height: 75px;
-}
-
-.margin {
-    margin-bottom: 45px;
-}
-
+/* COLORS */
 .bg-1 {
-    background-color: #ffffff; /* White */
-    color: #555555;
+    background-color: #ffffff;
+    color: #0f172a;
 }
 
 .bg-2 {
-    background-color: #2e72a1; /* Blue */
-    color: #ffffff;
-}
-
-.card {
-    color: black;
-    text-align: left;
-}
-
-.card-title {
-    font-weight: 700;
+    background-color: #2563eb;
+    color: white;
 }
 
 .bg-3 {
-    background-color: #000000; /* Black */
-    color: #ffffff;
+    background-color: #f1f5f9;
+    color: #0f172a;
 }
 
 .bg-4 {
-    background-color: #343a40; /* Dark Gray */
-    color: #fff;
+    background-color: #0f172a;
+    color: white;
 }
 
-.container-fluid {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
+/* NAVBAR */
 .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
+    letter-spacing: 1px;
 }
 
 .navbar-nav li a:hover {
-    color: #2e72a1 !important;
+    color: #60a5fa !important;
+}
+
+/* CARDS */
+.card {
+    border: none;
+    border-radius: 12px;
+    margin-top: 20px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* MARGIN */
+.margin {
+    margin-bottom: 40px;
+}
+
+/* BADGES */
+.badge {
+    margin: 3px;
+    font-size: 14px;
+    padding: 8px 10px;
 }
