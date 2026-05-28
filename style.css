@@ -3,113 +3,100 @@ html, body {
     scroll-behavior: smooth;
 }
 
+/* 🌌 MOVING GRADIENT BACKGROUND */
 body {
     font-family: "Montserrat", sans-serif;
     line-height: 1.6;
-    background-color: #0b0b0f; /* deep black */
-    color: #e6e6e6;
+    color: #eaeaea;
+    background: linear-gradient(-45deg, #0b0b0f, #12121a, #0f0f18, #0a0a10);
+    background-size: 400% 400%;
+    animation: gradientMove 18s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ✨ GLOW ORBS BACKGROUND EFFECT */
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: -1;
+    opacity: 0.25;
+}
+
+body::before {
+    background: #6fa8ff;
+    top: -100px;
+    left: -100px;
+}
+
+body::after {
+    background: #d4a05a;
+    bottom: -120px;
+    right: -120px;
 }
 
 /* HERO */
 .hero {
-    padding: 90px 20px;
+    padding: 100px 20px;
 }
 
-/* LOGO (fits dark luxury theme) */
+/* LOGO */
 #logo {
     max-height: 190px;
     margin-bottom: 20px;
-    transition: transform 0.3s ease;
-    filter: drop-shadow(0px 10px 18px rgba(0,0,0,0.6));
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: drop-shadow(0 0 20px rgba(212,160,90,0.25));
 }
 
 #logo:hover {
-    transform: scale(1.05);
+    transform: scale(1.06);
+    filter: drop-shadow(0 0 30px rgba(111,168,255,0.35));
 }
 
 /* TEXT */
 p {
     font-size: 16px;
-    color: #c9c9c9;
+    color: rgba(255,255,255,0.75);
 }
 
 /* SECTIONS */
 .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
-/* 🔥 THEME COLORS (from your logo palette) */
-.bg-1 {
-    background-color: #121218; /* dark charcoal */
-    color: #e6e6e6;
-}
-
-.bg-2 {
-    background: linear-gradient(135deg, #0b0b0f, #1a1a22);
-    color: #e6e6e6;
-}
-
-.bg-3 {
-    background-color: #101015;
-    color: #e6e6e6;
-}
-
-.bg-4 {
-    background-color: #07070a;
-    color: #e6e6e6;
-}
-
-/* NAVBAR */
-.navbar {
-    letter-spacing: 1px;
-    background-color: #07070a !important;
-    border-bottom: 1px solid rgba(212, 160, 90, 0.2);
-}
-
-.navbar-brand {
-    color: #d4a05a !important; /* bronze/gold */
-}
-
-.navbar-nav li a {
-    color: #c9c9c9 !important;
-}
-
-.navbar-nav li a:hover {
-    color: #6fa8ff !important; /* soft blue accent */
-}
-
-/* CARDS */
+/* 🧠 GLASSMORPHISM CARDS (Apple style) */
 .card {
-    background-color: #15151c;
-    border: 1px solid rgba(212, 160, 90, 0.15);
-    border-radius: 14px;
+    background: rgba(20, 20, 30, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 16px;
     margin-top: 20px;
-    transition: transform 0.2s ease, border 0.2s ease;
-    color: #e6e6e6;
+    color: #fff;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .card:hover {
-    transform: translateY(-6px);
-    border: 1px solid rgba(212, 160, 90, 0.5);
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(111,168,255,0.2);
 }
 
-/* CARD TEXT */
-.card-text {
-    color: #bdbdbd;
+/* HEADINGS */
+h1, h3 {
+    color: #d4a05a;
 }
 
-.text-muted {
-    color: #8f8f8f !important;
-}
-
-/* MARGIN */
-.margin {
-    margin-bottom: 40px;
-    color: #d4a05a; /* gold accent headings */
-}
-
-/* BADGES (matching palette) */
+/* BADGES */
 .badge {
     margin: 3px;
     font-size: 14px;
@@ -117,18 +104,62 @@ p {
     border-radius: 8px;
 }
 
-.badge-primary {
-    background-color: #6fa8ff;
+/* NAVBAR */
+.navbar {
+    background-color: rgba(10,10,15,0.7) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 
-.badge-secondary {
-    background-color: #3a3a44;
+.navbar-brand {
+    color: #d4a05a !important;
 }
 
-.badge-success {
-    background-color: #d4a05a; /* gold instead of green */
+.navbar-nav li a {
+    color: rgba(255,255,255,0.75) !important;
 }
 
-.badge-dark {
-    background-color: #1a1a22;
+.navbar-nav li a:hover {
+    color: #6fa8ff !important;
+}
+
+/* BUTTONS */
+.btn-light {
+    background: linear-gradient(135deg, #d4a05a, #6fa8ff);
+    border: none;
+    color: #0b0b0f;
+    font-weight: 600;
+}
+
+.btn-light:hover {
+    opacity: 0.9;
+}
+
+/* 📱 MOBILE RESPONSIVE UPGRADE */
+@media (max-width: 768px) {
+    #logo {
+        max-height: 140px;
+    }
+
+    .hero {
+        padding: 70px 15px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+}
+
+/* 🧾 LINKS */
+a {
+    color: #6fa8ff;
+}
+
+a:hover {
+    color: #d4a05a;
+    text-decoration: none;
 }
