@@ -24,7 +24,7 @@ body::after {
     content: "";
     position: fixed;
     width: 400px;
-    height: 400px;
+    height: 500px;
     border-radius: 50%;
     filter: blur(120px);
     z-index: -1;
