@@ -137,7 +137,7 @@ h1, h3 {
 
 @media (max-width: 768px) {
     #logo {
-        max-height: 140px;
+        max-height: 300px;
     }
 
     .hero {
