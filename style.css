@@ -43,12 +43,10 @@ body::after {
     right: -120px;
 }
 
-/* HERO */
 .hero {
     padding: 100px 20px;
 }
 
-/* LOGO */
 #logo {
     max-height: 390px;
     margin-bottom: 20px;
@@ -61,13 +59,11 @@ body::after {
     filter: drop-shadow(0 0 30px rgba(111,168,255,0.35));
 }
 
-/* TEXT */
 p {
     font-size: 22px;
     color: rgba(255,255,255,0.75);
 }
 
-/* SECTIONS */
 .container-fluid {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -90,12 +86,10 @@ p {
     box-shadow: 0 0 25px rgba(111,168,255,0.2);
 }
 
-/* HEADINGS */
 h1, h3 {
     color: #d4a05a;
 }
 
-/* BADGES */
 .badge {
     margin: 3px;
     font-size: 18px;
@@ -103,7 +97,6 @@ h1, h3 {
     border-radius: 8px;
 }
 
-/* NAVBAR */
 .navbar {
     background-color: rgba(10,10,15,0.7) !important;
     backdrop-filter: blur(12px);
@@ -116,13 +109,13 @@ h1, h3 {
 
 .navbar-nav li a {
     color: rgba(255,255,255,0.75) !important;
+    font-size: 20px;
 }
 
 .navbar-nav li a:hover {
     color: #6fa8ff !important;
 }
 
-/* BUTTONS */
 .btn-light {
     background: linear-gradient(135deg, #d4a05a, #6fa8ff);
     border: none;
@@ -153,7 +146,6 @@ h1, h3 {
     }
 }
 
-/* 🧾 LINKS */
 a {
     color: #6fa8ff;
 }
